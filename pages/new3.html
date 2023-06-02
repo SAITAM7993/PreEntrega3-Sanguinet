@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="gallery for theawakening">
+    <link rel="shortcut icon" href="../media/misc/favIcon.jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Abysmial</title>
+</head>
+
+<body>
+
+    <nav class="navbar fixed-top navbar-expand-lg bg-black" data-bs-theme="dark">
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon c-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+            <!-- justify-content-center centra todo, va aca para que el boton de mobile no quede centrado-->
+            <ul class="navbar-nav">
+                <li class="nav-item px-3"> <!--px es padding derecha-->
+                    <a class="nav-link text-white" href="../index.html#home">Home</a>
+                </li>
+                <li class="nav-item px-3">
+                    <a class="nav-link text-white" href="../index.html#about">About</a>
+                </li>
+                <li class="nav-item dropdown px-3">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        News
+                    </a>
+                    <ul class="dropdown-menu px-3 bg-black">
+                        <li><a class="dropdown-item text-white" href="./new1.html">The crow</a></li>
+                        <li><a class="dropdown-item text-white" href="./new2.html">The beauty</a></li>
+                        <li><a class="dropdown-item text-white" href="./new3.html">The awakening</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown px-3">
+                    <a class="nav-link dropdown-toggle text-white" href="#gallery" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Gallery
+                    </a>
+                    <ul class="dropdown-menu px-3 bg-black">
+                        <li><a class="dropdown-item text-white" href="./gallery.html">Full gallery</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item px-3">
+                    <a class="nav-link text-white" href="../index.html#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="container mt-5 mb-5" id="new">
+
+        <div class="card border-0">
+            <div class="row">
+                <div class="col-xl-6 col-md-12">
+                    <div class="container d-flex justify-content-center"> <!--d-flex para poder centrarlo-->
+                        <div id="carousel-indicators" class="carousel carousel-fade" data-bs-ride="carousel"
+                            data-bs-interval="5000">
+                            <!--camio a fade porque queda mejor la animacion (original carousel slide)
+                                            ride e interval es para que cambien solos-->
+
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carousel-indicators" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carousel-indicators" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carousel-indicators" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carousel-indicators" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#carousel-indicators" data-bs-slide-to="4"
+                                    aria-label="Slide 5"></button>
+                                <button type="button" data-bs-target="#carousel-indicators" data-bs-slide-to="5"
+                                    aria-label="Slide 6"></button>
+                                <button type="button" data-bs-target="#carousel-indicators" data-bs-slide-to="6"
+                                    aria-label="Slide 7"></button>
+                            </div>
+
+                            <div class="carousel-inner">
+                                <div class="carousel-item active c-item ">
+                                    <img src="../media/img/collections/awakening/awakening_1.webp"
+                                        class="c-image img-fluid d-block" alt="...">
+                                </div>
+                                <div class="carousel-item c-item">
+                                    <img src="../media/img/collections/awakening/awakening_2.webp"
+                                        class="c-image img-fluid d-block" alt="...">
+                                </div>
+                                <div class="carousel-item c-item">
+                                    <img src="../media/img/collections/awakening/awakening_3.webp"
+                                        class="c-image img-fluid  d-block" alt="...">
+                                </div>
+                                <div class="carousel-item c-item">
+                                    <img src="../media/img/collections/awakening/origins_1.webp"
+                                        class="c-image img-fluid  d-block" alt="origins 1">
+                                </div>
+
+                                <div class="carousel-item c-item">
+                                    <img src="../media/img/collections/awakening/origins_2.webp"
+                                        class="c-image img-fluid  d-block" alt="origins 2">
+                                </div>
+
+                                <div class="carousel-item c-item">
+                                    <img src="../media/img/collections/awakening/origins_4.webp"
+                                        class="c-image img-fluid  d-block" alt="origins 4">
+                                </div>
+                                <div class="carousel-item c-item">
+                                    <img src="../media/img/collections/awakening/origins_3.webp"
+                                        class="c-image img-fluid  d-block" alt="origins 3">
+                                </div>
+                            </div>
+
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-indicators"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel-indicators"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-md-12">
+                    <div class="card-body">
+                        <h1 class="card-title display-1 fw-normal py-5">The awakening</h1>
+                        <!--fs es font size cuanto más grande menor tamaño - idem a h1 h2 lead le da un estilo -->
+                        <p class="card-text fs-2 lead text-primary">Lorem ipsum, dolor sit amet consectetur
+                            adipisicing
+                            elit.</p>
+                        <p class="card-text fs-3 lead mb-5">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Eum
+                            odit vel
+                            autem earum praesentium eligendi, aliquid iure? Impedit?</p>
+                        <audio controls>
+                            <source src="../media/audio/theAwakening.mp3"> <!--audio-->
+                        </audio>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <footer class="container-fluid justify-content-center d-flex bg-black text-white p-5">
+        <div class="row mx-auto">
+
+            <div class="col-xl-6 c-footer-space align-self-center">
+                <!--fw es font weight-->
+                <p class="fw-bold">Contact</p>
+                <!--text-center alinea al centro el icono | py es padding eje y-->
+                <a class="text-white" href="https://www.instagram.com/abysmial/">
+                    <p><i class="bi bi-instagram text-center"></i> Abysmial</p>
+                </a>
+                <p><i class="bi bi-envelope text-center"></i> mail@mail.com</p>
+                <p><i class="bi bi-telephone text-center"></i> 099 027 878</p>
+            </div>
+            <div class="col-xl-6 c-footer-space">
+                <p class="fw-bold">Credits</p>
+                <p>Site by MSan</p>
+                <a class="text-white" href="https://www.instagram.com/abysmial/">
+                    <p>Art by Abysmial</p>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
