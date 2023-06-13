@@ -1,19 +1,22 @@
 /*reset inicio*/
-*{
+* {
     margin: 0;
-    padding:0;
+    padding: 0;
 }
 
 /*header inicio*/
-header{      
-    height: 75vh;    
-    background-image:url(../media/misc/banner.webp) ;
-    background: linear-gradient(to right, rgba(0,0,0,0.5),rgba(0,0,0,0.1), rgba(0,0,0,0)), url(../media/misc/banner.webp) no-repeat; /*para que me haga una sombra a la izquierda y no moleste fondo con el texto*/
-    background-size: cover;      
-    background-repeat: no-repeat;  
-    background-position: top;   
-    overflow-x: hidden; /*container fluid del header me generaba un scrollbar, solucionado con esto*/
+header {
+    height: 75vh;
+    background-image: url(../media/misc/banner.webp);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)), url(../media/misc/banner.webp) no-repeat;
+    /*para que me haga una sombra a la izquierda y no moleste fondo con el texto*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    overflow-x: hidden;
+    /*container fluid del header me generaba un scrollbar, solucionado con esto*/
 }
+
 /*fin header*/
 
 /*general inicio*/
@@ -23,20 +26,22 @@ header{
 #gallery-full,
 #contact,
 #new {
-     padding: 5%;  
+    padding: 5%;
     /*este padding si lo ponia con medidas absolutas me dejaba mal el responsive*/
 }
- .c-h1,
- .c-h2 {
-     text-shadow: 1px 1px 10px black;
- }
+
+.c-h1,
+.c-h2 {
+    text-shadow: 1px 1px 10px black;
+}
+
 /*fin general*/
 
 /*inicio clases custom*/
 
 /*icono back to top*/
 .c-scroll-top {
-    position: absolute;   
+    position: absolute;
     right: 3rem;
 }
 
@@ -48,24 +53,30 @@ header{
 
 /*fin icono back to top*/
 
-.c-image{ /*para acomodar tamaño inicial de about us*/
+.c-image {
+    /*para acomodar tamaño inicial de about us*/
     height: 100%;
-    object-fit:cover;
+    object-fit: cover;
 }
 
-.c-item{
-    height:100%;
+.c-item {
+    height: 100%;
 }
-.c-toggler-icon:active, .c-toggler-icon:hover{
-  border: none !important;
+
+.c-toggler-icon:active,
+.c-toggler-icon:hover {
+    border: none !important;
 }
-.c-toggler-icon{
-    color:white !important;
+
+.c-toggler-icon {
+    color: white !important;
 }
-.c-item-small{
+
+.c-item-small {
     height: auto;
-    width:300px;
+    width: 300px;
 }
+
 .c-button:active,
 .c-link:active {
     /*hice clase custom para que no afectara el slider*/
@@ -76,11 +87,13 @@ header{
     /*para cuando le haga  hover se agrande pero no tenga overflow*/
     overflow: hidden !important;
 }
+
 .c-button:hover,
 .c-link:hover {
     background-color: white !important;
     color: #0d6efd !important;
 }
+
 /*fin  clases custom*/
 
 /*cambios genericos y de boostrap*/
@@ -96,64 +109,77 @@ a {
     /*para sacarle formato a los links del footer*/
 }
 
-.c-footer-space{ /*para separar los items del footer*/
-    margin:0 20px 0 20px;
-    width: 170px;    
+.c-footer-space {
+    /*para separar los items del footer*/
+    margin: 0 20px 0 20px;
+    width: 170px;
 }
+
 .navbar-toggler {
     border: none;
 }
+
 /*para el boton del header*/
- .c-h3{
-    margin:5px 50px 5px 50px;
+.c-h3 {
+    margin: 5px 50px 5px 50px;
 }
-.navbar-toggler{
-    border:0;
+
+.navbar-toggler {
+    border: 0;
 }
+
 .icon-white {
     color: white;
 }
-.navbar-toggler:focus,.navbar-toggler:active, .navbar-toggler-icon:focus{
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
     /*le saco el resaltado del menu hamburguesa*/
     outline: none;
     box-shadow: none;
     border: 0;
 }
 
-.btn{   
-    border-radius: 50px; /*para redondear botones de boostrap*/
+.btn {
+    border-radius: 50px;
+    /*para redondear botones de boostrap*/
     background-color: #0d6efd !important;
 }
 
 /* fin cambios genericos y de boostrap*/
 @media (max-width:763px) {
-.c-text-center {
+    .c-text-center {
         text-align: center;
     }
 }
 
-@media (max-width:511px) {   
+@media (max-width:511px) {
     /*para que quede centrado en dispositivos chicos*/
-   
+
     .c-footer-space {
         /*para separar los items del footer*/
-        margin: 0;      
+        margin: 0;
     }
+
     .c-scroll-top {
         position: absolute;
         right: 2rem;
-    }        
+    }
+
     /*para que quede centrado en dispositivos chicos*/
-   .c-scroll-top {
+    .c-scroll-top {
         position: absolute;
         right: 2rem;
     }
-  .c-h3 {
-      margin: 5px 30px 5px 30px;
-  }  
- .display-5 {
-     font-size: 25px;  
- }
 
-  
+    .c-h3 {
+        margin: 5px 30px 5px 30px;
+    }
+
+    .display-5 {
+        font-size: 25px;
+    }
+
+
 }

@@ -1,0 +1,28 @@
+.btn {
+    border-radius: 50px;
+    /*para redondear botones de boostrap*/
+    background-color: $action-color-primary !important;
+}
+
+/*icono back to top*/
+.c-scroll-top {
+    position: absolute;
+    right: 3rem;
+}
+
+.c-scroll-top__link {
+    position: fixed;
+    /*para que siga el scroll y quede fijo*/
+    top: 94vh;
+}
+
+.c-button:active {
+    /*hice clase custom para que no afectara el slider*/
+    background-color: $action-color-primary !important;
+}
+
+.c-button:hover,
+.c-link:hover {
+    background-color: white !important;
+    color: $action-color-contrast!important;
+}

@@ -1,0 +1,19 @@
+.c-toggler-icon:active,
+.c-toggler-icon:hover {
+    border: none !important;
+}
+
+.c-toggler-icon {
+    color: white !important;
+}
+.navbar-toggler {
+    border: none; 
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    /*le saco el resaltado del menu hamburguesa*/
+    outline: none;
+    box-shadow: none;
+    border: 0;
+}

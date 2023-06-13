@@ -1,0 +1,15 @@
+.c-image {
+    /*para acomodar tamaño inicial de about us*/
+    height: 100%;
+    object-fit: cover;
+}
+.card-img:hover {
+    transform: scale(1.1);
+    transition: all 0.2s ease-in;
+    /*paraque sea gradual*/
+}
+
+//sobrescribo la de bootstrap
+.card-text{
+    font-size: 20px;
+}

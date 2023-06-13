@@ -1,0 +1,33 @@
+   h1,h2,h3,h4,h5,h6{
+    font-family: $font-primary !important;
+    font-weight: 400;    
+ }
+  .c-h1{
+      text-shadow: 1px 1px 10px $color-secondary;
+      font-family: $font-primary !important;
+      font-weight: 400;      
+      font-size: $fs-11;
+  }
+ .c-h2 {
+      text-shadow: 1px 1px 10px $color-secondary;
+      font-family: $font-primary !important;
+      font-weight: 100 !important;
+      font-size: $fs-9;
+ }
+ /*para el boton del header*/
+ .c-h3 {
+    margin: 5px 50px 5px 50px;
+    font-family: $font-primary !important;
+    font-size: $fs-5;
+    font-weight: 400;
+ }
+ a {
+     text-decoration: none;
+     font-family: $font-primary !important;  
+   font-weight: 300;
+     /*para sacarle formato a los links del footer*/
+ }
+ p{
+   font-family: $font-primary !important;
+   font-weight: 300 !important;
+ }

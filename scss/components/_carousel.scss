@@ -1,0 +1,14 @@
+.c-item {
+    height: 100%;
+}
+
+.c-img-link {
+    /*para cuando le haga  hover se agrande pero no tenga overflow*/
+    overflow: hidden !important;
+}
+
+.c-image {
+    /*para acomodar tamaño inicial de about us*/
+    height: 100%;
+    object-fit: cover;
+}

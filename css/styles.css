@@ -1,5 +1,199 @@
-div {
-  width: 300px;
+@charset "UTF-8";
+/** CSS VARIABLES PREFIX **/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+/** FONT SIZES (fs-number)**/
+/** COLORES **/
+/*reset inicio*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*header inicio*/
+header {
+  height: 75vh;
+  background-image: url(../media/misc/banner.webp);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)), url(../media/misc/banner.webp) no-repeat;
+  /*para que me haga una sombra a la izquierda y no moleste fondo con el texto*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  overflow-x: hidden;
+  /*container fluid del header me generaba un scrollbar, solucionado con esto*/
+}
+
+/*fin header*/
+.c-link:active {
+  background-color: var(--def-color-primary, #0080ff);
+}
+
+@media (max-width: 763px) {
+  .c-text-center {
+    text-align: center;
+  }
+}
+@media (max-width: 511px) {
+  /*para que quede centrado en dispositivos chicos*/
+  .c-footer-space {
+    /*para separar los items del footer*/
+    margin: 0;
+  }
+  .c-scroll-top {
+    position: absolute;
+    right: 2rem;
+  }
+  /*para que quede centrado en dispositivos chicos*/
+  .c-scroll-top {
+    position: absolute;
+    right: 2rem;
+  }
+  .c-h3 {
+    margin: 5px 30px 5px 30px;
+  }
+  .display-5 {
+    font-size: 25px;
+  }
+}
+/*general inicio*/
+#about,
+#news,
+#gallery,
+#gallery-full,
+#contact,
+#new {
+  padding: 5%;
+  /*este padding si lo ponia con medidas absolutas me dejaba mal el responsive*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 400;
+}
+
+.c-h1 {
+  text-shadow: 1px 1px 10px #000000;
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 400;
+  font-size: 4rem;
+}
+
+.c-h2 {
+  text-shadow: 1px 1px 10px #000000;
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 100 !important;
+  font-size: 3rem;
+}
+
+/*para el boton del header*/
+.c-h3 {
+  margin: 5px 50px 5px 50px;
+  font-family: "Roboto", sans-serif !important;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 300;
+  /*para sacarle formato a los links del footer*/
+}
+
+p {
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 300 !important;
+}
+
+.btn {
+  border-radius: 50px;
+  /*para redondear botones de boostrap*/
+  background-color: var(--def-color-primary, #0080ff) !important;
+}
+
+/*icono back to top*/
+.c-scroll-top {
+  position: absolute;
+  right: 3rem;
+}
+
+.c-scroll-top__link {
+  position: fixed;
+  /*para que siga el scroll y quede fijo*/
+  top: 94vh;
+}
+
+.c-button:active {
+  /*hice clase custom para que no afectara el slider*/
+  background-color: var(--def-color-primary, #0080ff) !important;
+}
+
+.c-button:hover,
+.c-link:hover {
+  background-color: white !important;
+  color: var(--def-color-primary-contrast, #0080ff) !important;
+}
+
+.c-image {
+  /*para acomodar tamaño inicial de about us*/
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-img:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease-in;
+  /*paraque sea gradual*/
+}
+
+.card-text {
+  font-size: 20px;
+}
+
+.c-item {
+  height: 100%;
+}
+
+.c-img-link {
+  /*para cuando le haga  hover se agrande pero no tenga overflow*/
+  overflow: hidden !important;
+}
+
+.c-image {
+  /*para acomodar tamaño inicial de about us*/
+  height: 100%;
+  object-fit: cover;
+}
+
+.icon-white {
+  color: white;
+}
+
+.c-toggler-icon:active,
+.c-toggler-icon:hover {
+  border: none !important;
+}
+
+.c-toggler-icon {
+  color: white !important;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  /*le saco el resaltado del menu hamburguesa*/
+  outline: none;
+  box-shadow: none;
+  border: 0;
+}
+
+.c-footer-space {
+  /*para separar los items del footer*/
+  margin: 0 20px 0 20px;
+  width: 170px;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,38 @@
+//VARIABLES GLOBALES
+
+/** CSS VARIABLES PREFIX **/
+$prefix: 'def' !default; 
+//default significa que es una variable global que puede ser sobrescrita mas adelante (todas las variables arrancarian con def-
+
+
+//TEXTOS
+//font default texto
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+$font-primary: 'Roboto',sans-serif;
+$font-text: var(--#{$prefix}-font-primary, $font-primary); //fuente primaria 
+
+
+/** FONT SIZES (fs-number)**/
+$fs-1: 0.75rem !default; //12px 
+$fs-2: 0.875rem !default; //14px 
+$fs-3n: 1rem !default; // 16px 
+$fs-4: 1.125rem !default; // 18px  
+$fs-5: 1.25rem !default; // 20px 
+$fs-6: 1.5rem !default; // 24px 
+$fs-7: 1.875rem !default; // 30px 
+$fs-8: 2.25rem !default; // 36px 
+$fs-9: 3rem !default; // 48px 
+$fs-10: 3.75rem !default; // 60px
+$fs-11: 4rem !default; 
+
+
+
+/** COLORES **/
+$color-primary: #dfdfdf !default;
+$color-secondary: #000000 !default;
+$color-accent: #0080ff !default;
+$color-hover:rgb(255, 255, 255) !default;
+
+$action-color-primary: var(--#{$prefix}-color-primary,$color-accent);
+$action-color-hover: var(--#{$prefix}-color-primary-hover, $color-hover);
+$action-color-contrast: var(--#{$prefix}-color-primary-contrast, $color-accent);
