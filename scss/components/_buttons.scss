@@ -1,28 +1,43 @@
+a{
+    border-radius: 8px;  
+}
+
 .btn {
     border-radius: 50px;
+    transition: .3s;
     /*para redondear botones de boostrap*/
     background-color: $action-color-primary !important;
+    &:hover{
+        @include hoverScale(1.1, 1.1);//uso mixin para agrandar y cambiar colores
+    }
 }
 
 /*icono back to top*/
-.c-scroll-top {
+.c-scroll-top {    
     position: absolute;
-    right: 3rem;
+    right: 3rem;    
+    &__link{
+        position: fixed;/*para que siga el scroll y quede fijo*/
+        top: 94vh;
+        transition: .3s;
+        &:hover {
+                transform: scale(1.4);
+            }
+    }        
 }
 
-.c-scroll-top__link {
-    position: fixed;
-    /*para que siga el scroll y quede fijo*/
-    top: 94vh;
+.c-button{
+    transition: 0.3s;
+    &:active{
+        background-color: $action-color-primary !important;/*hice clase custom para que no afectara el slider*/        
+    }
+    &:hover{
+        @include hoverScale(1.1, 1.1);                
+    }
 }
 
-.c-button:active {
-    /*hice clase custom para que no afectara el slider*/
-    background-color: $action-color-primary !important;
-}
-
-.c-button:hover,
-.c-link:hover {
-    background-color: white !important;
-    color: $action-color-contrast!important;
+.c-link{
+    &:hover {
+        @include hoverScale(1.1, 1.1);
+    }
 }

@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /** CSS VARIABLES PREFIX **/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
-/** FONT SIZES (fs-number)**/
+/** FONT SIZES (c-fs-number)**/
 /** COLORES **/
 /*reset inicio*/
 * {
@@ -23,46 +23,51 @@ header {
 }
 
 /*fin header*/
-.c-link:active {
-  background-color: var(--def-color-primary, #0080ff);
-}
-
-@media (max-width: 763px) {
-  .c-text-center {
-    text-align: center;
-  }
-}
-@media (max-width: 511px) {
-  /*para que quede centrado en dispositivos chicos*/
-  .c-footer-space {
-    /*para separar los items del footer*/
-    margin: 0;
-  }
-  .c-scroll-top {
-    position: absolute;
-    right: 2rem;
-  }
-  /*para que quede centrado en dispositivos chicos*/
-  .c-scroll-top {
-    position: absolute;
-    right: 2rem;
-  }
-  .c-h3 {
-    margin: 5px 30px 5px 30px;
-  }
-  .display-5 {
-    font-size: 25px;
-  }
-}
-/*general inicio*/
+/*sections inicio*/
 #about,
 #news,
 #gallery,
 #gallery-full,
 #contact,
 #new {
-  padding: 5%;
+  padding: 3%;
   /*este padding si lo ponia con medidas absolutas me dejaba mal el responsive*/
+}
+
+.c-link {
+  transition: 0.2s;
+}
+.c-link:hover {
+  color: #0080ff !important;
+  background-color: white !important;
+  transform: scale(0, 0);
+}
+
+.dropdown-menu {
+  border: none !important;
+}
+
+.c-image {
+  /*para acomodar tamaño inicial de about us*/
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s;
+  /*paraque sea gradual*/
+}
+.c-image:hover {
+  transform: scale(1.3);
+}
+
+.c-img-link {
+  /*para cuando le haga  hover se agrande pero no tenga overflow*/
+  overflow: hidden !important;
+}
+
+.c-image {
+  /*para acomodar tamaño inicial de about us*/
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -104,10 +109,33 @@ p {
   font-weight: 300 !important;
 }
 
+.p-small {
+  font-size: 1.25rem !important;
+  color: rgb(100, 100, 100);
+}
+.p-middle {
+  font-size: 1.5rem !important;
+  color: rgb(100, 100, 100);
+}
+.p-big {
+  font-size: 1.875rem !important;
+  color: rgb(100, 100, 100);
+}
+
+a {
+  border-radius: 8px;
+}
+
 .btn {
   border-radius: 50px;
+  transition: 0.3s;
   /*para redondear botones de boostrap*/
   background-color: var(--def-color-primary, #0080ff) !important;
+}
+.btn:hover {
+  color: #0080ff !important;
+  background-color: white !important;
+  transform: scale(1.1, 1.1);
 }
 
 /*icono back to top*/
@@ -115,57 +143,56 @@ p {
   position: absolute;
   right: 3rem;
 }
-
 .c-scroll-top__link {
-  position: fixed;
-  /*para que siga el scroll y quede fijo*/
+  position: fixed; /*para que siga el scroll y quede fijo*/
   top: 94vh;
+  transition: 0.3s;
+}
+.c-scroll-top__link:hover {
+  transform: scale(1.4);
 }
 
+.c-button {
+  transition: 0.3s;
+}
 .c-button:active {
-  /*hice clase custom para que no afectara el slider*/
-  background-color: var(--def-color-primary, #0080ff) !important;
+  background-color: var(--def-color-primary, #0080ff) !important; /*hice clase custom para que no afectara el slider*/
 }
-
-.c-button:hover,
-.c-link:hover {
+.c-button:hover {
+  color: #0080ff !important;
   background-color: white !important;
-  color: var(--def-color-primary-contrast, #0080ff) !important;
+  transform: scale(1.1, 1.1);
 }
 
-.c-image {
-  /*para acomodar tamaño inicial de about us*/
-  height: 100%;
-  object-fit: cover;
-}
-
-.card-img:hover {
-  transform: scale(1.1);
-  transition: all 0.2s ease-in;
-  /*paraque sea gradual*/
+.c-link:hover {
+  color: #0080ff !important;
+  background-color: white !important;
+  transform: scale(1.1, 1.1);
 }
 
 .card-text {
-  font-size: 20px;
+  font-size: 1.5rem;
+}
+
+.card {
+  transition: all 0.4s;
+}
+.card:hover {
+  transform: translateY(-3%);
+  background-color: #000000;
+  color: white;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.card:hover .p-big, .card:hover .p-small, .card:hover .p-middle {
+  color: white;
 }
 
 .c-item {
   height: 100%;
 }
 
-.c-img-link {
-  /*para cuando le haga  hover se agrande pero no tenga overflow*/
-  overflow: hidden !important;
-}
-
-.c-image {
-  /*para acomodar tamaño inicial de about us*/
-  height: 100%;
-  object-fit: cover;
-}
-
 .icon-white {
-  color: white;
+  color: #dfdfdf;
 }
 
 .c-toggler-icon:active,
@@ -174,7 +201,7 @@ p {
 }
 
 .c-toggler-icon {
-  color: white !important;
+  color: #dfdfdf !important;
 }
 
 .navbar-toggler {
@@ -195,5 +222,33 @@ p {
   margin: 0 20px 0 20px;
   width: 170px;
 }
+
+@media (max-width: 990px) {
+  .c-text-center {
+    text-align: center;
+  }
+  a {
+    padding-left: 30px !important;
+  }
+}
+@media (max-width: 511px) {
+  /*para que quede centrado en dispositivos chicos*/
+  .c-footer-space {
+    /*para separar los items del footer*/
+    margin: 0;
+  }
+  /*para que quede centrado en dispositivos chicos*/
+  .c-scroll-top {
+    position: absolute;
+    right: 2rem;
+  }
+  .c-h3 {
+    margin: 5px 30px 5px 30px;
+  }
+  .display-5 {
+    font-size: 1.5rem;
+  }
+}
+/*nota: todos los estilos que tengan c- son estilos custom, no pisan bootstrap ni lo genérico css*/
 
 /*# sourceMappingURL=styles.css.map */

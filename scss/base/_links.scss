@@ -1,4 +1,10 @@
+.c-link{   
+    transition: .2s;
+    &:hover{
+        @include hoverScale(0,0);
+    }   
+}
 
-.c-link:active {
-    background-color: $action-color-primary;
+.dropdown-menu{
+    border: none !important; //saca el borde de bootstrap
 }

@@ -1,14 +1,16 @@
+
 @import './variables';
+@import './mixins';
 @import './base/base';
-@import './base/header';
 @import './base/links';
-@import './base/mediaq';
-@import './base/sections';
+@import './base/image';
 @import './base/typography';
 @import './components/buttons';
 @import './components/cards';
 @import './components/carousel';
 @import './components/icons';
-@import './components/images';
 @import './components/navbar';
-@import './components/footer';
+@import './base/footer';
+@import './base/mediaq';//siempre mq al final
+
+/*nota: todos los estilos que tengan c- son estilos custom, no pisan bootstrap ni lo genérico css*/

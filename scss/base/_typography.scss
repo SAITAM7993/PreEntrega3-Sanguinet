@@ -6,28 +6,44 @@
       text-shadow: 1px 1px 10px $color-secondary;
       font-family: $font-primary !important;
       font-weight: 400;      
-      font-size: $fs-11;
+      font-size: $c-fs-11;
   }
  .c-h2 {
       text-shadow: 1px 1px 10px $color-secondary;
       font-family: $font-primary !important;
       font-weight: 100 !important;
-      font-size: $fs-9;
+      font-size: $c-fs-9;
  }
  /*para el boton del header*/
  .c-h3 {
     margin: 5px 50px 5px 50px;
     font-family: $font-primary !important;
-    font-size: $fs-5;
+    font-size: $c-fs-5;
     font-weight: 400;
  }
- a {
-     text-decoration: none;
-     font-family: $font-primary !important;  
+ a {   
+   text-decoration: none;
+   font-family: $font-primary !important;  
    font-weight: 300;
-     /*para sacarle formato a los links del footer*/
+   /*para sacarle formato a los links del footer*/
  }
+
  p{
    font-family: $font-primary !important;
-   font-weight: 300 !important;
+   font-weight: 300 !important;  
+  
  }
+ .p{
+   &-small {
+      font-size: $c-fs-5 !important;
+      color: rgb(100, 100, 100)
+   }
+    &-middle {
+      font-size: $c-fs-6 !important;
+      color: rgb(100, 100, 100)
+    }
+    &-big {
+      font-size: $c-fs-7 !important;
+      color: rgb(100, 100, 100)
+    }
+}

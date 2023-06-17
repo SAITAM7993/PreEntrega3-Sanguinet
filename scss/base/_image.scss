@@ -1,0 +1,23 @@
+.c-image {
+    /*para acomodar tamaño inicial de about us*/
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s;
+
+    /*paraque sea gradual*/
+    &:hover {
+        transform: scale(1.3);
+    }
+
+}
+.c-img-link {
+    /*para cuando le haga  hover se agrande pero no tenga overflow*/
+    overflow: hidden !important;
+}
+
+.c-image {
+    /*para acomodar tamaño inicial de about us*/
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden !important;
+}

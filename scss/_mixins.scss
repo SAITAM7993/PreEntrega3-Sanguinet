@@ -1,0 +1,6 @@
+//mixin para cambiar de color y hacer un transform scale al hacer hover, parms tamaño x, tamaño y
+@mixin hoverScale($x, $y) {
+    color:$color-accent !important;
+    background-color: $color-hover !important;
+    transform:scale($x, $y);
+}
