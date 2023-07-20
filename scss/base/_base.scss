@@ -7,11 +7,9 @@
 /*header inicio*/
 header {
     height: 75vh;
-    background-image: url(../media/misc/banner.webp);
     background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)), url(../media/misc/banner.webp) no-repeat;
     /*para que me haga una sombra a la izquierda y no moleste fondo con el texto*/
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: cover;   
     background-position: top;
     overflow-x: hidden;
     /*container fluid del header me generaba un scrollbar, solucionado con esto*/
